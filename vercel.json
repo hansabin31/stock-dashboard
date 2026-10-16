@@ -1,4 +1,12 @@
 {
-  "buildCommand": "npx vite build",
-  "outputDirectory": "dist"
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rootDirectory": "client",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
